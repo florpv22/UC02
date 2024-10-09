@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FCE5FC"
     tools:context=".MainActivity">
 
     <TextView
@@ -12,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:text="Examen de Admision 2024"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,7 +23,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:text="Formulario de registro"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/textView"
@@ -44,10 +45,7 @@
         android:layout_marginTop="8dp"
         android:ems="8"
         android:inputType="text"
-        android:text="Name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.113"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
@@ -159,43 +157,49 @@
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/checkBox_primero"
         android:layout_width="100dp"
         android:layout_height="30dp"
+        android:layout_marginTop="5dp"
         android:text="@string/checkbox_radio"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="556dp" />
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/checkBox_internet"
         android:layout_width="100dp"
         android:layout_height="30dp"
+        android:layout_marginTop="2dp"
         android:text="@string/checkbox_internet"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="586dp" />
+        app:layout_constraintStart_toStartOf="@+id/checkBox_primero"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_primero" />
 
     <CheckBox
-        android:id="@+id/checkBox3"
+        android:id="@+id/checkBox_amigo"
         android:layout_width="100dp"
         android:layout_height="30dp"
+        android:layout_marginTop="2dp"
         android:text="@string/checkbox_amigo"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="616dp" />
+        app:layout_constraintStart_toStartOf="@+id/checkBox_internet"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_internet" />
 
     <CheckBox
-        android:id="@+id/checkBox4"
+        android:id="@+id/checkBox_publici"
         android:layout_width="100dp"
         android:layout_height="30dp"
+        android:layout_marginTop="2dp"
         android:text="@string/checkbox_publicidad"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="646dp" />
+        app:layout_constraintStart_toStartOf="@+id/checkBox_amigo"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_amigo" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_primero"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enviar"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="675dp" />
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/baseline_send_24"
+        android:text="@string/Button_primero"
+        app:layout_constraintStart_toStartOf="@+id/checkBox_publici"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_publici" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
