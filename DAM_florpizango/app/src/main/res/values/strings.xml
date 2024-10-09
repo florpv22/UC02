@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">DAM_florpizango</string>
+    <string name="RadioButton_is">Ingenieria de sistemas</string>
+    <string name="RadioButton_ia">Ingenieria Ambiental</string>
+    <string name="RadioButton_im">Ingenieria Mecánica</string>
+    <string name="RadioButton_ad">Administración</string>
+    <string name="checkbox_radio">Radio</string>
+    <string name="checkbox_internet">Internet</string>
+    <string name="checkbox_amigo">Amigo</string>
+    <string name="checkbox_publicidad">Publicidad</string>
 </resources>
